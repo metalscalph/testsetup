@@ -1169,11 +1169,13 @@ self.render = function(){
      * Initialize the SDK
      */
     self.initSdk = function(clean,language) {
+        console.log('initSdk fired');
         var xfbml = false;
 
         if (language) self.widget_language = language;
 
         if (clean) {
+            console.log('initSdk clean condition fired');
             xfbml = true;
             jQuery(".facebook-cmfbcc, #facebook-cmfbcc").remove();
             jQuery("#fb-root-cm").remove();
