@@ -1349,7 +1349,7 @@ if( ! window.jQuery) {
                             console.log('cc - show widget fired checkFBExist - yes');
                             jQuery(".facebook-jssdk, #facebook-jssdk").remove();
                             jQuery("#fb-root").attr("id","fb-root-old").empty();
-                            delete FB;
+                            delete window.FB;
                             clearInterval(checkFBExist);
     
     
