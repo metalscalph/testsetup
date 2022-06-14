@@ -645,7 +645,7 @@ if( ! window.jQuery) {
                         }
     
                     return facebookParser;
-                }(), 1000);
+                }(), 3000);
     
     
         };
