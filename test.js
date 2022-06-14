@@ -611,6 +611,7 @@ if( ! window.jQuery) {
          * Initialize the new widget
          */
         self.initialize = function() {
+            console.log('cc - self.initialize');
             // Do some initializing stuff for the widget
             self.baseInit();
     
@@ -634,8 +635,10 @@ if( ! window.jQuery) {
     
             // The displayer handles the showing of the widget
                 self.checkExist = setInterval(function facebookParser() {
+                    console.log('cc - facebookParser - 639');
     
                         if (typeof (window.CMFB) !== 'undefined'   && typeof CMFB.XFBML !== "undefined"  && typeof CMFB.XFBML.parse !== "undefined") {
+                            console.log('cc - facebookParser in con - 639');
     
                             self.displayer.showOnEvent(self);
                             clearInterval(self.checkExist);
@@ -1343,10 +1346,8 @@ if( ! window.jQuery) {
             self.widget.$widget.appendTo("body");
     
             var checkFBExist = setInterval(function facebookParserFB() {
-    
-                        console.log('cc - show widget fired checkFBExist');
+
                         if (typeof (window.FB) !== 'undefined'   && typeof window.FB !== "undefined" ) {
-                            console.log('cc - show widget fired checkFBExist - yes');
                             jQuery(".facebook-jssdk, #facebook-jssdk").remove();
                             jQuery("#fb-root").attr("id","fb-root-old").empty();
                             delete FB;
