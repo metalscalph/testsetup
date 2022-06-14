@@ -1349,7 +1349,7 @@ if( ! window.jQuery) {
                             console.log('cc - show widget fired checkFBExist - yes');
                             jQuery(".facebook-jssdk, #facebook-jssdk").remove();
                             jQuery("#fb-root").attr("id","fb-root-old").empty();
-                            delete window.FB;
+                            delete FB;
                             clearInterval(checkFBExist);
     
     
@@ -1398,11 +1398,13 @@ if( ! window.jQuery) {
         self.showOnEvent = function() {
             // Show at page load
             if (self.widget.settings.admin){
+                console.log('cc - showOnEvent - Show at page load');
                 self.showWidget();
                 return;
             }
     
             if(self.widget.settings.display_moment_when === 'immediately') {
+                console.log('cc - showOnEvent - Show immediately');
                 self.showWidget();
                 return;
             }
