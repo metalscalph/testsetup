@@ -639,9 +639,9 @@ if( ! window.jQuery) {
     
                         if (typeof (window.CMFB) !== 'undefined'   && typeof CMFB.XFBML !== "undefined"  && typeof CMFB.XFBML.parse !== "undefined") {
                             console.log('cc - facebookParser in con - 639');
-    
-                            self.displayer.showOnEvent(self);
                             clearInterval(self.checkExist);
+                            self.displayer.showOnEvent(self);
+                            
                         }
     
                     return facebookParser;
