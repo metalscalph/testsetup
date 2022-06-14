@@ -1330,7 +1330,7 @@ function FacebookApi(widgetSettings) {
                 appId: self.appId,
                 autoLogAppEvents: true,
                 xfbml: xfbml,
-                version: 'v2.12'
+                version: 'v14.0'
             });
 
 
