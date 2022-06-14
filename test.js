@@ -634,18 +634,7 @@ if( ! window.jQuery) {
             }
     
             // The displayer handles the showing of the widget
-                self.checkExist = setInterval(function facebookParser() {
-                    console.log('cc - facebookParser - 639');
-    
-                        if (typeof (window.CMFB) !== 'undefined'   && typeof CMFB.XFBML !== "undefined"  && typeof CMFB.XFBML.parse !== "undefined") {
-                            console.log('cc - facebookParser in con - 639');
-                            clearInterval(self.checkExist);
-                            self.displayer.showOnEvent(self);
-                            
-                        }
-    
-                    return facebookParser;
-                }(), 15000);
+            self.displayer.showOnEvent(self);
     
     
         };
