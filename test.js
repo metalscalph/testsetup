@@ -1492,6 +1492,7 @@ function WidgetDisplayer(widget) {
     };
 }
 function WidgetFactory() {
+    console.log('customer chat - widget factory fired');
     var self = this;
 
     /**
