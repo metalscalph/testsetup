@@ -1213,6 +1213,7 @@ self.render = function(){
 
 }
 function Init(baseUrl, widgetSettings) {
+    console.log('cc - Init func fired');
     var self = this;
 
 
