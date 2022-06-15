@@ -637,7 +637,7 @@ if( ! window.jQuery) {
             self.checkExist = setInterval(function facebookParser() {
                     console.log('cc - facebookParser - 639');
     
-                        if (typeof (window.CMFB) !== 'undefined'   && typeof CMFB.XFBML !== "undefined"  && typeof CMFB.XFBML.parse !== "undefined") {
+                        if (self.checkExist !== undefined && typeof (window.CMFB) !== 'undefined'   && typeof CMFB.XFBML !== "undefined"  && typeof CMFB.XFBML.parse !== "undefined") {
                             console.log('cc - facebookParser in con - 639');
                             console.log(self.checkExist)
                             clearInterval(self.checkExist);
